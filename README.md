@@ -1,4 +1,5 @@
 # pihole-client
+[![PyPI Version](https://img.shields.io/pypi/v/pihole-client)](https://pypi.org/project/pihole-client)
 
 Python client for Pi-hole
 
@@ -26,8 +27,8 @@ load_dotenv()
 
 def main():
     piholeClient = PiholeClient( 
-        os.getenv('PIHOLE_DOMAIN'), 
-        os.getenv('PIHOLE_TOKEN')
+        os.getenv("PIHOLE_DOMAIN"), 
+        os.getenv("PIHOLE_TOKEN")
     )
 
     resp = piholeClient.get_custom_dns()
